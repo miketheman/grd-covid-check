@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gotham COVID Check</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        font-family: Futura, Helvetica, sans-serif;
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr auto;
+      }
+      body.low {
+        background-color: lightgreen;
+      }
+      body.medium {
+        background-color: lightyellow;
+      }
+      body.high {
+        background-color: lightcoral;
+      }
+      .content {
+        margin: auto;
+        padding: 20px;
+      }
+      .footer {
+        font-size: small;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 20px;
+        text-align: center;
+      }
+      .level.low {
+        color: green;
+      }
+      .level.medium {
+        color: orange;
+      }
+      .level.high {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <h1>GRD COVID Check</h1>
+      <p>How are we doing?</p>
+      <!-- include the javascript and return the results -->
+      <script src="index.js"></script>
+      <!-- Placeholder javascript to populate -->
+      <div id="ny-results"></div>
+      <div id="nj-results"></div>
+
+      <h4 id="last-updated"></h4>
+    </div>
+
+    <footer class="footer">
+      Coded with <a href="https://github.com/miketheman" target="_blank">❤️ in NYC</a>. Data
+      from the <a href="https://data.cdc.gov/">Data.CDC.gov</a>
+    </footer>
+  </body>
+</html>
