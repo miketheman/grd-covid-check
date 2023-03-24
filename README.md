@@ -18,7 +18,7 @@ See https://dev.socrata.com/foundry/data.cdc.gov/3nnm-4jni for more information.
 
 Open `index.html`, `index.js` in your favorite editor and go nuts!
 
-# Helpful References
+## Helpful References
 
 The examples from the Socrata API docs use jQuery, here's an example of theirs,
 with our filters:
@@ -43,3 +43,11 @@ However we prefer the native fetch API, so our examples have been updated to use
 
 A good reference for the Socrata API date and time is here:
 https://support.socrata.com/hc/en-us/articles/4403481607447-Working-with-Date-and-Time
+
+## License
+
+MIT License. See [LICENSE.md](LICENSE.md) for more information.
+
+## Author
+
+[Mike Fiedler](https://github.com/miketheman)
